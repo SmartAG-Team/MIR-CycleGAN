@@ -1,0 +1,40 @@
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 16                            
+          checkpoints_dir: ./root/autodl-tmp/checkpoints 
+                crop_size: 256                           
+                 dataroot: ./datasets/MIR-CycleGAN/SLCoff	[default: None]
+             dataset_mode: missdata                      
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: latest                        
+                     eval: False                         
+             fusion_count: 3                             
+                  gpu_ids: 0                             
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: False                         	[default: None]
+                load_iter: 0                             	[default: 0]
+                load_size: 256                           
+         max_dataset_size: inf                           
+                    model: multi_cycle_gan               
+               n_layers_D: 3                             
+                     name: mir_cyclegan                  	[default: MIR_CycleGAN]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: multi_unet                    
+                      ngf: 64                            
+               no_dropout: True                          
+                  no_flip: False                         
+                     norm: instance                      
+                 num_test: 5000                          
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: test                          
+               preprocess: resize_and_crop               
+              results_dir: ./root/autodl-tmp/results/SLCoff	[default: ./results/]
+           serial_batches: False                         
+                   suffix:                               
+                  verbose: False                         
+----------------- End -------------------
